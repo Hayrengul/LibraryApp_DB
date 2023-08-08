@@ -85,5 +85,4 @@ public class UsersStepDefs {
         System.out.println(email + " is activated.");
     }
 
-
 }

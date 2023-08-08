@@ -17,11 +17,10 @@ public class DashboardStepDefs
     LoginPage loginPage=new LoginPage();
     DashBoardPage dashBoardPage=new DashBoardPage();
 
-
     @Given("the user logged in as {string}")
     public void the_user_logged_in_as(String user) {
         loginPage.login(user);
-         BrowserUtil.waitFor(4);
+        BrowserUtil.waitFor(4);
     }
     @When("user gets all information from modules")
     public void user_gets_all_information_from_modules() {
@@ -34,7 +33,6 @@ public class DashboardStepDefs
         System.out.println("actualBorrowedBookNumbers = " + actualBorrowedBookNumbers);
 
     }
-
     @Then("the information should be same with database")
     public void the_information_should_be_same_with_database() {
 
@@ -74,6 +72,8 @@ public class DashboardStepDefs
         //DB_Util.destroy(); connection will be closed  by @db hooks
 
     }
+
+
 
 
 }
